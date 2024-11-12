@@ -7,19 +7,23 @@
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
+    "jsEngine": "hermes",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "jsEngine": "jsc"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "jsEngine": "hermes",
+      "package": "com.anonymous.sappmobile"
     },
     "web": {
       "bundler": "metro",
@@ -29,8 +33,6 @@
     "plugins": [
       "expo-router"
     ],
-    "experiments": {
-      "typedRoutes": true
-    }
+    "experiments": {}
   }
 }
